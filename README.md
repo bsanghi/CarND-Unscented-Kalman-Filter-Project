@@ -25,9 +25,8 @@ Using the unscented filter required to tune two parameters, the process noises s
 The hardcoded variance of the random linear and yaw rate accelerations applied during the predict step. The chosen values should be 
 physically reasonable. A good way to check if the noise values are physically reasonable is to use the "normalized information squared" 
 or NIS statistic. 
-If much more than 5% of the NIS values computed from measurements exceed the threshold, it means that our measurements are actually 
-being drawn from a distribution with a greater variance than we assumed. In other words, we have underestimated the process noise, and 
-should increase it.
+If much more than 5% of the NIS values computed from measurements exceed the threshold, we have underestimated the process noise, and 
+should increase it. The results look reasonable.
 
 ![alt text][image3]
 
